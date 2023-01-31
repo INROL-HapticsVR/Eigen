@@ -48,6 +48,10 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SO
 # define NEED_B1_RESTORED B1
 # undef B1
 #endif
+#ifdef F
+# define NEED_F_RESTORED F
+# undef F
+#endif
 #ifdef round
 # define NEED_round_RESTORED round
 # undef round
@@ -75,6 +79,10 @@ namespace std {
 #ifdef NEED_B1_RESTORED
 # define B1 NEED_B1_RESTORED
 # undef NEED_B1_RESTORED
+#endif
+#ifdef NEED_F_RESTORED
+# define F NEED_F_RESTORED
+# undef NEED_F_RESTORED
 #endif
 #ifdef NEED_round_RESTORED
 # define round NEED_round_RESTORED
